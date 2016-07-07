@@ -1,3 +1,14 @@
+%% sampling subsets for Double Greedy algorithm with Gauss quadrature
+%
+% -input
+%   K: data kernel matrix, N*N where N is number of samples
+%
+% -output
+%   C: selected elements by Double Greedy algorithm
+%
+% sample usage:
+%   C = dg_gauss(K)
+
 function C = dg_gauss(K)
 
 n = size(K,1);
